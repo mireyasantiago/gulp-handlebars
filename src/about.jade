@@ -1,0 +1,58 @@
+extends templates/layout
+
+block append main
+  div.container-fluid.fondo--about
+    div.row
+      div.col.s8.offset-s1.col.l8.offset-l1
+        h3 About Us
+        h5 Why our clients love to work with us.
+  div.container-fluid
+    div.row
+      div.col.s5.offset-s1.col.l5.offset-l1
+        img.responsive-img(src="../public/img/aboutus/1.png")
+      div.col.s6.col.l6
+        p También es una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original. En otras palabras, un texto es un entramado de signos con una intención comunicativa que adquiere sentido en determinado contexto.
+
+    mixin columnas(primero, tituloImagen, texto)
+      div.col.s3.offset-s1.col.l3.offset-l1
+        div.row
+          img.responsive-img.margen--izquierda(src="../public/img/services/#{primero}")
+        div.row
+          h5.center-align #{tituloImagen}
+          p.center-align También es una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido
+    div.row
+      +columnas("1.png", "Incredible Responsive")
+      +columnas("1.png", "Superior Typography")
+      +columnas("1.png", "Swift Pages Builder")
+
+  div.container-fluid.fondo--about
+    div.row
+      div.col.s6.offset-s1.col.l6.offset-l1
+        h3.margen--abajo Triangle Corporate Template
+        p A responsi.retyna-ready & wide multipurpose
+      div.col.s2.col.l2
+        button.boton__color--verde TAKE THE TOUR
+      div.col.s3.col.l3
+        img.responsive-img.margen--abajo(src="../public/img/home/tour-icon2.png")
+  div.container
+    div.row
+      h3.center-align Meet the Team
+      p.center-align También es una composición de caracteres imprimibles (con grafema)
+      p.center-align generados por un algoritmo de cifrado que, aunque no tienen
+    div.row
+      div.col.s3.col.l3
+        img.responsive-img(src="../public/img/blog/timeline/4.jpg")
+        p JHON DOE
+        P Ceo & Developer
+      div.col.s3.col.l3
+        img.responsive-img(src="../public/img/blog/timeline/1.jpg")
+        p JHON DOE
+        P Ceo & Developer
+      div.col.s3.col.l3
+        img.responsive-img(src="../public/img/blog/timeline/2.jpg")
+        p JHON DOE
+        P Ceo & Developer
+      div.col.s3.col.l3
+        img.responsive-img(src="../public/img/blog/timeline/3.jpg")
+        p JHON DOE
+        P Ceo & Developer

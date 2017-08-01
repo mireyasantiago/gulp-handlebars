@@ -1,0 +1,7 @@
+
+@mixin fondos($alto, $posicion){
+  height: $alto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: $posicion;
+}

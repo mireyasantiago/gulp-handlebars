@@ -1,0 +1,85 @@
+
+@import 'variables';
+@import "mixin";
+@import 'jquery';
+
+//estilos generales
+body{
+  color: #565150;
+}
+
+// estilos del navegador
+nav{
+  background-color: white;
+}
+nav ul a{
+  color: black;
+  padding: 0 15px;
+}
+nav .button-collapse{
+  color: blue;
+}
+nav .nav-wrapper {
+  margin: 10px 40px 40px;
+}
+nav .nav-wrapper ul i{
+  color: blue;
+}
+div.iconos i{
+  margin-left: 30px;
+}
+div.iconos{
+  padding: 40px 40px 0;
+}
+
+// estilos de fondos
+
+.fondo-footer{
+    //background-image: url("../public/img/home/footer.png");
+  background-color: pink;
+  @include fondos(100vh,center);
+}
+
+// estilos para el fondo-footer
+.footer--margen{
+  margin-top: 10px;
+}
+
+.formulario{
+  width: 70%;
+}
+#boton--formulario{
+  width: 100%;
+}
+//area de titulo
+.fondo--about{
+  //background-image: url("../public/img/home/tour-bg.png");
+ margin-top: 40px;
+ background-color: green;
+ @include fondos(40vh,center);
+}
+
+//estilos de lista portafolio
+#lista{
+  display: flex;
+}
+#lista li{
+  margin-right: 30px;
+}
+#lista li p{
+  display: inline-block;
+}
+.margen--izquierda{
+  margin-left: 35%;
+}
+.boton__color--verde{
+  color: 	#00FFFF;
+  border-color: 	#00FFFF;
+  border-style: solid 3px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 55%;
+}
+.margen--abajo{
+  margin-top: 15%;
+}

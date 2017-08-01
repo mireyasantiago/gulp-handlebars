@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>paginas</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+  </head>
+  <body>
+    <div class="right-align iconos"><i aria-hidden="true" class="circle fa fa-twitter fa-lg redes"></i><i aria-hidden="true" class="circle fa fa-facebook fa-lg redes"></i><i aria-hidden="true" class="circle fa fa-google-plus fa-lg redes"></i><i aria-hidden="true" class="circle fa fa-instagram fa-lg redes"></i></div>
+    <div>
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper"><img src="../public/img/logo.png" class="brand-logo responsive-img"><a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">view_headline</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="../public/about.html" data-activates="dropdown1" class="dropdown-button">PAGES<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="../public/blog.html" data-activates="dropdown1" class="dropdown-button">BLOG<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="../public/portafolio.html" data-activates="dropdown1" class="dropdown-button">PORTFOLIO<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="../public/creative.html">$HORTCODES</a></li>
+            <li><i class="material-icons">search</i></li>
+          </ul>
+          <ul id="mobile-demo" class="side-nav">
+            <li><a href="../public/about.html" class="dropdown-button">PAGES</a></li>
+            <li><a href="../public/blog.html" class="dropdown-button">BLOG</a></li>
+            <li><a href="../public/portafolio.html" class="dropdown-button">PORTFOLIO</a></li>
+            <li><a href="../public/creative.html">$HORTCODES</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid fondo--about">
+      <div class="row">
+        <div class="col s8 offset-s1 col l8 offset-l1">
+          <h3>Blog</h3>
+          <h5>Why our clients love to work with us.</h5>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col s8 offset-s2 col l8 offset-l2 footer--margen"><img src="../public/img/home/under.png" class="responsive-img"></div>
+      </div>
+      <div class="row fondo-footer">
+        <div class="col s5 col l5">
+          <h4 class="center-align">Testimonial</h4>
+          <div class="row">
+            <div class="col s3 offset-s2 col l3 offset-l2"><img src="../public/img/home/profile1.png" class="responsive-img"></div>
+            <div class="col s6 col l6">
+              <blockquote>
+                <p>A pesar de los que muchos piensan, el libro no es autobiográfico, aunque podría encajar en la mayor parte de mi vida</p>
+                <footer class="right-align">- María Álvarez</footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s3 offset-s2 col l3 offset-l2"><img src="../public/img/home/profile2.png" class="responsive-img"></div>
+            <div class="col s6 col l6">
+              <blockquote>
+                <p>A pesar de los que muchos piensan, el libro no es autobiográfico, aunque podría encajar en la mayor parte de mi vida</p>
+                <footer class="right-align">- María Álvarez</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col s2 col l2">
+          <div class="row">
+                      <h4>Contact</h4>
+                      <ul>
+                        <li><small>Email:<a>cirelop0@gmail.com</a></small></li>
+                        <li><small>Phone: +12 457898999989</small></li>
+                        <li><small>Fax: +47 555 8488888</small></li>
+                        <li><small></small></li>
+                      </ul>
+          </div>
+          <div class="row">
+                      <h4>Address</h4>
+                      <ul>
+                        <li><small>Unit C2. st.Vincent<a></a></small></li>
+                        <li><small>Fooder Road</small></li>
+                        <li><small>United Kingstongs</small></li>
+                        <li><small>Fooder Road</small></li>
+                      </ul>
+          </div>
+        </div>
+        <div class="col l5 col s5">
+          <h4>Send and Message</h4>
+          <form method="POST" action="formulario-contacto.php" class="formulario">
+            <div class="input-field">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" required>
+            </div>
+            <div class="input-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="input-field">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" rows="10" length="140" required class="materialize-textarea"></textarea>
+            </div>
+            <div>
+              <button id="boton--formulario" type="submit" class="waves-effect waves-light btn">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script src="../public/js/app.js"></script>
+  </body>
+</html>

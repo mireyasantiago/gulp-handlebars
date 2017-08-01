@@ -1,0 +1,14 @@
+{
+  "name": "septimo",
+  "version": "1.0.0",
+  "description": "creando paginas con uso de sass,pug y handlebars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mireya Lopez Santiago",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
