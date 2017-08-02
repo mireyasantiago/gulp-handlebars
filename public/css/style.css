@@ -1,6 +1,47 @@
 body {
   color: #565150; }
 
+.posicion {
+  position: relative; }
+
+.arriba {
+  margin-top: 40px; }
+
+.rotate {
+  transform: rotate(180deg); }
+
+.triangulo-equilatero-bottom {
+  width: 0;
+  height: 0;
+  border-right: 110px solid transparent;
+  border-top: 100px solid transparent;
+  border-left: 110px solid transparent;
+  border-bottom: 100px solid #f0ad4e; }
+
+.margen-contenedor {
+  margin: 10px; }
+
+.margen-ceroAbajo {
+  margin-bottom: 0; }
+
+.color--azul {
+  background-color: blue;
+  color: white;
+  padding: 4px; }
+
+.margen--derecho {
+  margin-left: 35px; }
+
+.enlinea {
+  display: inline-block; }
+
+p.enlinea {
+  margin-right: 30px; }
+
+.color--gris {
+  background-color: #A9A9A9;
+  margin: 5px 5px 5px 5px; }
+
 nav {
   background-color: white; }
 
@@ -24,14 +65,30 @@ div.iconos {
   padding: 40px 40px 0; }
 
 .fondo-footer {
-  background-color: pink;
+  background-image: url("../../public/img/home/footer.png");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: ""; }
 
 .footer--margen {
   margin-top: 10px; }
+
+.fondo--ciudad {
+  background-image: url("../../public/img/home/slider-bg.png");
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left; }
+
+.boton--transparente {
+  border-radius: 15px;
+  padding: 20px 35px 20px 35px;
+  cursor: pointer;
+  background-color: Transparent;
+  border-color: #00CED1;
+  color: DarkTurquoise;
+  margin-left: 150px; }
 
 .formulario {
   width: 70%; }
@@ -40,8 +97,8 @@ div.iconos {
   width: 100%; }
 
 .fondo--about {
+  background-image: url("../../public/img/home/tour-bg.png");
   margin-top: 40px;
-  background-color: green;
   height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,6 +108,9 @@ div.iconos {
   display: flex; }
 
 #lista li {
+  margin-right: 30px; }
+
+li {
   margin-right: 30px; }
 
 #lista li p {
@@ -69,5 +129,37 @@ div.iconos {
 
 .margen--abajo {
   margin-top: 15%; }
+
+.margen--cuadroRojo {
+  margin-top: 25px;
+  right: 50px; }
+
+.imagen--sol {
+  position: relative;
+  top: "";
+  bottom: 70px;
+  left: 145px; }
+
+.imagen--casa {
+  position: relative;
+  top: 220px;
+  bottom: "";
+  left: ""; }
+
+.imagen--aves {
+  position: relative;
+  top: 100px;
+  bottom: "";
+  left: 40px; }
+
+.imagen--aves2 {
+  position: relative;
+  top: 5px;
+  bottom: "";
+  left: 340px; }
+
+.posicion--absoluta {
+  position: absolute;
+  margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */
