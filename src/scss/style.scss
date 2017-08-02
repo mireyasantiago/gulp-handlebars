@@ -7,14 +7,59 @@
 body{
   color: #565150;
 }
+.posicion{
+ position: relative;
+}
+.arriba{
+  margin-top:40px;
+}
+.rotate {
+  transform:rotate(180deg);
+}
+.triangulo-equilatero-bottom {
+width: 0;
+height: 0;
+border-right: 110px solid transparent;
+border-top: 100px solid transparent;
+border-left: 110px solid transparent;
+border-bottom: 100px solid #f0ad4e;
+}
+.margen-contenedor{
+  margin: 10px;
+}
+.margen-ceroAbajo{
+  margin-bottom: 0;
+}
+.color--azul{
+  background-color: blue;
+  color: white;
+  padding: 4px;
+}
+.margen--derecho{
+  margin-left: 35px;
+}
+.enlinea{
+  display: inline-block;
+}
+p.enlinea{
+  margin-right: 30px;
+}
+.color--gris{
+  background-color:#A9A9A9;
+  margin: 5px 5px 5px 5px;
+}
 
 // estilos del navegador
 nav{
   background-color: white;
 }
-nav ul a{
-  color: black;
-  padding: 0 15px;
+nav{
+  ul{
+    a{
+      color: black;
+      padding: 0 15px;
+    }
+  }
 }
 nav .button-collapse{
   color: blue;
@@ -35,16 +80,29 @@ div.iconos{
 // estilos de fondos
 
 .fondo-footer{
-    //background-image: url("../public/img/home/footer.png");
-  background-color: pink;
-  @include fondos(100vh,center);
+  background-image: url("../../public/img/home/footer.png");
+  //background-color: pink;
+  @include fondos(100vh,"");
 }
 
 // estilos para el fondo-footer
 .footer--margen{
   margin-top: 10px;
 }
+.fondo--ciudad{
+  background-image: url("../../public/img/home/slider-bg.png");
+  @include fondos(60vh,left);
 
+}
+.boton--transparente{
+  border-radius: 15px;
+  padding: 20px 35px 20px 35px;
+  cursor:pointer;
+  background-color: Transparent;
+  border-color: #00CED1;
+  color: DarkTurquoise ;
+  margin-left: 150px;
+}
 .formulario{
   width: 70%;
 }
@@ -52,10 +110,11 @@ div.iconos{
   width: 100%;
 }
 //area de titulo
+
 .fondo--about{
-  //background-image: url("../public/img/home/tour-bg.png");
+ background-image: url("../../public/img/home/tour-bg.png");
  margin-top: 40px;
- background-color: green;
+ //background-color: green;
  @include fondos(40vh,center);
 }
 
@@ -63,11 +122,20 @@ div.iconos{
 #lista{
   display: flex;
 }
-#lista li{
+#lista{
+  li{
+    margin-right: 30px;
+  }
+}
+li{
   margin-right: 30px;
 }
-#lista li p{
-  display: inline-block;
+#lista {
+  li {
+    p{
+      display: inline-block;
+    }
+  }
 }
 .margen--izquierda{
   margin-left: 35%;
@@ -82,4 +150,29 @@ div.iconos{
 }
 .margen--abajo{
   margin-top: 15%;
+}
+.margen--cuadroRojo{
+  margin-top: 25px;
+  right: 50px;
+}
+.imagen--sol{
+  @include posicionImagen(relative,"",70px,145px)
+}
+.imagen--casa{
+  @include posicionImagen(relative,220px,"","" )
+}
+.imagen--aves{
+  @include posicionImagen(relative,100px,"", 40px )
+}
+.imagen--aves2{
+  @include posicionImagen(relative,5px,"",340px )
+}
+.posicion--absoluta{
+  position: absolute;
+  margin-top: 30px;
+}
+//estilo de la pagina creative(home)
+.opacidad--moto{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }

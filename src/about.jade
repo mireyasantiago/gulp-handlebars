@@ -1,4 +1,4 @@
-extends templates/layout
+include templates/layout
 
 block append main
   div.container-fluid.fondo--about
@@ -56,3 +56,5 @@ block append main
         img.responsive-img(src="../public/img/blog/timeline/3.jpg")
         p JHON DOE
         P Ceo & Developer
+block append script
+  script(src="../public/js/handlebars.js")

@@ -1,3 +1,48 @@
 extends templates/layout
 
 block append main
+  div.container-fluid
+    div.fondo--ciudad
+      div.row
+        div.col.s6.col.l6
+          h2 We are create Nerds
+          p Cuentos, poemas, ensayos, novelas y otros generos literarios coexisten en este sitio de
+          p literatura en español para generar una magica experiencia. Mediante ...
+          p Cuentos, poemas, ensayos, novelas y otros generos literarios coexisten en este sitio de literatura en
+          p español para generar una magica experiencia. Mediante ...
+          button.boton--transparente SING IN
+        div.col.s6.col.l6
+          img.responsive-img.posicion--absoluta(src="../public/img/home/slider/hill.png")
+          img.responsive-img.imagen--aves(src="../public/img/home/slider/birds1.png")
+          img.responsive-img.imagen--aves2(src="../public/img/home/slider/birds2.png")
+          img.responsive-img.imagen--casa(src="../public/img/home/slider/house.png")
+          img.responsive-img.imagen--sol(src="../public/img/home/slider/sun.png")
+  div.container
+    div.row
+      img.responsive-img.margen--cuadroRojo(src="../public/img/portfolio/project3.jpg")
+
+    mixin texto3(titulo, contenido)
+      div.col.s4.col.l4
+        h5.center-align #{titulo}
+        p.center-align #{contenido}
+    div.row
+      +texto3("Incredibly response","Cuentos, poemas, ensayos, novelas y otros generos literarios coexisten en este sitio de Cuentos, poemas, ensayos, novelas y otros generos literarios coexisten en este sitio de")
+      +texto3("Superior tecnology","También es una composición generados por un algoritmo de cifrado que, ensayos, novelas y otros generos literarios coexisten en este sitio de")
+      +texto3("Incredibly response","Cuentos, poemas, ensayos, novelas y otros generos literarios coexisten en este sitio de Cuentos, poemas, ensayos, novelas y otros generos literarios coexisten en este sitio de")
+    div.row
+  div.container-fluid
+    div.row.fondo--about
+      div.col.s4.offset-s8.col.l4.offset-l8
+        img.responsive-img.opacidad--moto(src="../public/img/home/tour-icon2.png")
+  div.container
+    div.row
+      div.col.s7.col.l7
+        img.responsive-img.opacidad--moto(src="../public/img/home/image1.png")
+      div.col.s5.col.l5
+        h4.opacidad--moto Experience
+        p.opacidad--moto Con origen en el latín textus, la palabra texto describe a un conjunto de enunciados que permite dar un mensaje coherente y ordenado, ya sea de manera ...
+      div.col.s8.col.l8
+        h4.opacidad--moto Built for the Responsive Web
+        p.opacidad--moto Con origen en el latín textus, la palabra texto describe a un conjunto de enunciados que permite dar un mensaje coherente y ordenado, ya sea de manera ...
+      div.col.s4.col.l4
+        img.responsive-img.opacidad--moto(src="../public/img/home/image2.png")

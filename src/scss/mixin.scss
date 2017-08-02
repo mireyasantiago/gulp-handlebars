@@ -4,4 +4,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: $posicion;
+
 }
+
+@mixin posicionImagen($posicion, $abajo, $arriba, $izquierda){
+  position: $posicion;
+  top: $abajo;
+  bottom: $arriba;
+  left: $izquierda;
+  }
