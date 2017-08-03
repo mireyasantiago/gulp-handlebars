@@ -1,5 +1,138 @@
+/*realizar media @ para texto*/
+@media screen and (max-width: 519px) and (min-width: 200px) {
+  div#fondo_presentacion {
+    height: 40vh; }
+
+  h1 {
+    font-size: 25px;
+    text-align: center;
+    top: 200px;
+    width: 100%; }
+
+  h3 {
+    font-size: 15px;
+    text-align: center;
+    top: 200px; }
+
+  h4 {
+    font-size: 13px; }
+
+  p {
+    font-size: 12px; }
+
+  ul#lista li {
+    margin-right: 5px; }
+    ul#lista li p {
+      font-size: .9em; }
+
+  ul.pagination li {
+    margin-right: 5px; }
+
+  .fondo-footer {
+    background-image: url("../../public/img/home/footer.png");
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: ""; }
+
+  .fondo--about {
+    background-image: url("../../public/img/home/tour-bg.png");
+    margin-top: 40px;
+    height: 18vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+  blockquote.bigquote {
+    margin: 0;
+    padding: 0; }
+
+  blockquote.bigquote p.contenido {
+    margin: 0;
+    padding: 0;
+    font-size: .6em; }
+
+  .respondiva-lista {
+    font-size: .7em; }
+
+  .formulario {
+    width: 100%;
+    font-size: .8em; }
+    .formulario textarea.materialize-textarea {
+      padding: 0; }
+    .formulario button {
+      font-size: .7em;
+      padding: 0; }
+
+  .pagination li a {
+    font-size: .8rem;
+    padding: 0 6px; } }
+@media screen and (max-width: 1024px) and (min-width: 520px) {
+  p {
+    font-size: 1em; }
+
+  ul#lista li {
+    margin-right: 5px; }
+    ul#lista li p {
+      font-size: .9em; }
+
+  .fondo-footer {
+    background-image: url("../../public/img/home/footer.png");
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: ""; }
+
+  .fondo--about {
+    background-image: url("../../public/img/home/tour-bg.png");
+    margin-top: 40px;
+    height: 25vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; } }
+@media screen and (min-width: 1024px) {
+  div#fondo1 {
+    height: 80vh; }
+
+  h1 {
+    text-align: center; }
+
+  h3 {
+    text-align: center;
+    top: 200px;
+    width: 100%; }
+
+  .fondo-footer {
+    background-image: url("../../public/img/home/footer.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: ""; }
+
+  .fondo--about {
+    background-image: url("../../public/img/home/tour-bg.png");
+    margin-top: 40px;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; } }
+blockquote.bigquote {
+  border: none;
+  background: url("../../public/img/quotes1.png") no-repeat; }
+
+blockquote.bigquote p.contenido {
+  border: none;
+  padding: 10px 10px 5px 0;
+  background: url("../../public/img/quotes2.png") no-repeat right bottom; }
+
+.color--rojo {
+  color: red; }
+
 body {
   color: #565150; }
+
+.row {
+  margin-bottom: 0; }
 
 .posicion {
   position: relative; }
@@ -64,19 +197,12 @@ div.iconos i {
 div.iconos {
   padding: 40px 40px 0; }
 
-.fondo-footer {
-  background-image: url("../../public/img/home/footer.png");
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: ""; }
-
 .footer--margen {
   margin-top: 10px; }
 
 .fondo--ciudad {
   background-image: url("../../public/img/home/slider-bg.png");
-  height: 60vh;
+  height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left; }
@@ -95,14 +221,6 @@ div.iconos {
 
 #boton--formulario {
   width: 100%; }
-
-.fondo--about {
-  background-image: url("../../public/img/home/tour-bg.png");
-  margin-top: 40px;
-  height: 40vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
 
 #lista {
   display: flex; }
@@ -128,42 +246,45 @@ li {
   margin-top: 55%; }
 
 .margen--abajo {
-  margin-top: 15%; }
+  margin-top: 12%; }
 
 .margen--cuadroRojo {
-  margin-top: 25px;
-  right: 50px; }
+  margin-left: 15%; }
 
 .imagen--sol {
   position: relative;
-  top: "";
-  bottom: 70px;
-  left: 145px; }
+  top: 50%;
+  bottom: 40%;
+  left: 0; }
 
 .imagen--casa {
   position: relative;
   top: 220px;
-  bottom: "";
-  left: ""; }
+  bottom: 0;
+  left: 0; }
 
 .imagen--aves {
   position: relative;
-  top: 100px;
-  bottom: "";
-  left: 40px; }
+  top: 30%;
+  bottom: 0;
+  left: 25%; }
 
 .imagen--aves2 {
   position: relative;
-  top: 5px;
-  bottom: "";
-  left: 340px; }
+  top: 15%;
+  bottom: 0;
+  left: 10%; }
 
 .posicion--absoluta {
   position: absolute;
-  margin-top: 30px; }
+  margin-top: 22%;
+  right: .5%; }
 
 .opacidad--moto {
   opacity: 0.5;
   filter: alpha(opacity=50); }
+
+.relativa {
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

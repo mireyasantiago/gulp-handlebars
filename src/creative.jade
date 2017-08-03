@@ -11,15 +11,15 @@ block append main
           p Cuentos, poemas, ensayos, novelas y otros generos literarios coexisten en este sitio de literatura en
           p español para generar una magica experiencia. Mediante ...
           button.boton--transparente SING IN
-        div.col.s6.col.l6
+        div.col.s6.col.l6.relativa
           img.responsive-img.posicion--absoluta(src="../public/img/home/slider/hill.png")
           img.responsive-img.imagen--aves(src="../public/img/home/slider/birds1.png")
           img.responsive-img.imagen--aves2(src="../public/img/home/slider/birds2.png")
           img.responsive-img.imagen--casa(src="../public/img/home/slider/house.png")
           img.responsive-img.imagen--sol(src="../public/img/home/slider/sun.png")
   div.container
-    div.row
-      img.responsive-img.margen--cuadroRojo(src="../public/img/portfolio/project3.jpg")
+    div.row.margen--abajo
+      img.responsive-img.margen--cuadroRojo.opacidad--moto(src="../public/img/portfolio/project3.jpg")
 
     mixin texto3(titulo, contenido)
       div.col.s4.col.l4
@@ -35,7 +35,7 @@ block append main
       div.col.s4.offset-s8.col.l4.offset-l8
         img.responsive-img.opacidad--moto(src="../public/img/home/tour-icon2.png")
   div.container
-    div.row
+    div.row.margen--abajo
       div.col.s7.col.l7
         img.responsive-img.opacidad--moto(src="../public/img/home/image1.png")
       div.col.s5.col.l5
@@ -46,3 +46,11 @@ block append main
         p.opacidad--moto Con origen en el latín textus, la palabra texto describe a un conjunto de enunciados que permite dar un mensaje coherente y ordenado, ya sea de manera ...
       div.col.s4.col.l4
         img.responsive-img.opacidad--moto(src="../public/img/home/image2.png")
+      div.col.s7.col.l7
+        img.responsive-img.opacidad--moto(src="../public/img/home/image3.png")
+      div.col.s5.col.l5
+        h4.opacidad--moto Experience
+        p.opacidad--moto Con origen en el latín textus, la palabra texto describe a un conjunto de enunciados que permite dar un mensaje coherente y ordenado, ya sea de manera ...
+    di.row
+      div.col.s4.offset-s4.col.l4.offset-l4
+        img.responsive-img(src="../public/img/home/clients.png")

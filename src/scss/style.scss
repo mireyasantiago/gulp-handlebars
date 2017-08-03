@@ -2,11 +2,28 @@
 @import 'variables';
 @import "mixin";
 @import 'jquery';
+// estilos para footer en los comentarios
+blockquote.bigquote {
+border:none;
+background:url("../../public/img/quotes1.png") no-repeat;
+}
+blockquote.bigquote p.contenido {
+border:none;
+padding: 10px 10px 5px 0;
+background:url("../../public/img/quotes2.png") no-repeat right bottom;
+}
+.color--rojo{
+  color: red;
+}
 
 //estilos generales
 body{
   color: #565150;
 }
+.row{
+  margin-bottom: 0;
+}
+
 .posicion{
  position: relative;
 }
@@ -79,11 +96,7 @@ div.iconos{
 
 // estilos de fondos
 
-.fondo-footer{
-  background-image: url("../../public/img/home/footer.png");
-  //background-color: pink;
-  @include fondos(100vh,"");
-}
+
 
 // estilos para el fondo-footer
 .footer--margen{
@@ -91,7 +104,7 @@ div.iconos{
 }
 .fondo--ciudad{
   background-image: url("../../public/img/home/slider-bg.png");
-  @include fondos(60vh,left);
+  @include fondos(90vh,left);
 
 }
 .boton--transparente{
@@ -111,12 +124,7 @@ div.iconos{
 }
 //area de titulo
 
-.fondo--about{
- background-image: url("../../public/img/home/tour-bg.png");
- margin-top: 40px;
- //background-color: green;
- @include fondos(40vh,center);
-}
+
 
 //estilos de lista portafolio
 #lista{
@@ -149,30 +157,33 @@ li{
   margin-top: 55%;
 }
 .margen--abajo{
-  margin-top: 15%;
+  margin-top: 12%;
 }
 .margen--cuadroRojo{
-  margin-top: 25px;
-  right: 50px;
+  margin-left:  15%;
 }
 .imagen--sol{
-  @include posicionImagen(relative,"",70px,145px)
+  @include posicionImagen(relative,50%,40%,0)
 }
 .imagen--casa{
-  @include posicionImagen(relative,220px,"","" )
+  @include posicionImagen(relative,220px,0,0 )
 }
 .imagen--aves{
-  @include posicionImagen(relative,100px,"", 40px )
+  @include posicionImagen(relative,30%,0,25%)
 }
 .imagen--aves2{
-  @include posicionImagen(relative,5px,"",340px )
+  @include posicionImagen(relative,15%,0,10% )
 }
 .posicion--absoluta{
   position: absolute;
-  margin-top: 30px;
+  margin-top: 22%;
+  right: .5%;
 }
 //estilo de la pagina creative(home)
 .opacidad--moto{
   opacity: 0.5;
   filter: alpha(opacity=50);
+}
+.relativa{
+  position: relative;
 }
