@@ -33,17 +33,33 @@ body{
 .rotate {
   transform:rotate(180deg);
 }
+.rotate2 {
+  transform:rotate(360deg);
+}
 .triangulo-equilatero-bottom {
 width: 0;
 height: 0;
 border-right: 110px solid transparent;
 border-top: 100px solid transparent;
 border-left: 110px solid transparent;
-border-bottom: 100px solid #f0ad4e;
+border-bottom: 100px solid ;
+}
+.azul{
+  color:blue;
+}
+.amarillo{
+  color: #f0ad4e;
+}
+.rojo{
+  color: red;
+}
+.gris{
+  color: grey;
 }
 .margen-contenedor{
   margin: 10px;
 }
+
 .margen-ceroAbajo{
   margin-bottom: 0;
 }

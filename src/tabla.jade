@@ -11,8 +11,8 @@ block append main
     div.row.margen-contenedor
       div.col.s3.col.l3
         div.margen-ceroAbajo
-          div.triangulo-equilatero-bottom
-            p.posicion.arriba colores
+          div.triangulo-equilatero-bottom.azul
+            p.posicion.arriba
         div.color--azul.margen-ceroAbajo
           h4.enlinea Basic
           h4.enlinea.margen--derecho  $29/
@@ -23,9 +23,81 @@ block append main
         div.color--gris
           p.enlinea elementos de la tabla
           i.fa.fa-times(aria-hidden="true")
+
         div.margen-ceroAbajo
-          div.triangulo-equilatero-bottom.rotate
-          div: p.posicion.arriba colores
+          div.triangulo-equilatero-bottom.rotate.azul
+
+      div.col.s3.col.l3
+        div.margen-ceroAbajo
+          div.triangulo-equilatero-bottom.rojo
+            p.posicion.arriba
+          div.color--azul.margen-ceroAbajo
+            h4.enlinea Basic
+            h4.enlinea.margen--derecho  $29/
+            p.right-align Mont
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.margen-ceroAbajo
+            div.triangulo-equilatero-bottom.rotate.rojo
+
+      div.col.s3.col.l3
+        div.margen-ceroAbajo
+          div.triangulo-equilatero-bottom.amarillo
+            p.posicion.arriba
+          div.color--azul.margen-ceroAbajo
+            h4.enlinea Basic
+            h4.enlinea.margen--derecho  $29/
+            p.right-align Mont
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.margen-ceroAbajo
+            div.triangulo-equilatero-bottom.rotate.amarillo
+
+
+      div.col.s3.col.l3
+        div.margen-ceroAbajo
+          div.triangulo-equilatero-bottom.gris
+            p.posicion.arriba
+          div.color--azul.margen-ceroAbajo
+            h4.enlinea Basic
+            h4.enlinea.margen--derecho  $29/
+            p.right-align Mont
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.color--gris
+            p.enlinea elementos de la tabla
+            i.fa.fa-times(aria-hidden="true")
+          div.margen-ceroAbajo
+            div.triangulo-equilatero-bottom.rotate.gris
+
+
 
 
 
@@ -34,8 +106,7 @@ block append main
 
 
 
-  block append script
-    script(src="../public/js/handlebars.js")
-    script#index(type="text/x-handlebars-template")
-    script(type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js")
-    script(src="template.js")
+block append script
+  script(src="../public/js/handlebars.js")
+  script(type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js")
+  script(src="template.js")

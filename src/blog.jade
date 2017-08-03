@@ -9,7 +9,7 @@ block append main
 
   div.container
     mixin secciones(numeroImagen)
-      div.col.s3.col.l3
+      div
         img.responsive-img(src="../public/img/blog/masonary/#{numeroImagen}")
         a creative
           i.fa.fa-eraser(aria-hidden="true")
@@ -22,14 +22,18 @@ block append main
           i.fa.fa-heart(aria-hidden="true")
         a 3 coments
           i.fa.fa-telegram(aria-hidden="true")
-
     div.row
-      +secciones("1.jpg")
-      +secciones("3.jpg")
-      +secciones("6.jpg")
-      +secciones("8.jpg")
-    div.row
-      +secciones("4.jpg")
-      +secciones("5.jpg")
-      +secciones("10.jpg")
-      +secciones("3.jpg")
+      div.col.s3.col.l3
+        +secciones("1.jpg")
+        +secciones("4.jpg")
+        +secciones("9.jpg")
+      div.col.s3.col.l3
+        +secciones("3.jpg")
+        +secciones("4.jpg")
+        +secciones("4.jpg")
+      div.col.s3.col.l3
+        +secciones("6.jpg")
+        +secciones("10.jpg")
+      div.col.s3.col.l3
+        +secciones("8.jpg")
+        +secciones("3.jpg")
