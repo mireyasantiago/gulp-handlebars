@@ -3,6 +3,15 @@
   div#fondo_presentacion {
     height: 40vh; }
 
+  /*medida para la imagen del logo*/
+  img.brand-logo {
+    width: 35%;
+    margin: 5%; }
+
+  h2 {
+    text-align: center;
+    font-size: .8rem; }
+
   h1 {
     font-size: 25px;
     text-align: center;
