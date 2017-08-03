@@ -6,3 +6,30 @@ block append main
       div.col.s8.offset-s1.col.l8.offset-l1
         h3 Blog
         h5 Why our clients love to work with us.
+
+  div.container
+    mixin secciones(numeroImagen)
+      div.col.s3.col.l3
+        img.responsive-img(src="../public/img/blog/masonary/#{numeroImagen}")
+        a creative
+          i.fa.fa-eraser(aria-hidden="true")
+
+        h5 Advanced bussines card desing
+        a posten by micro news
+        p La traducción es la actividad que consiste en comprender el significado de un texto en un .... C. mandó traducir del hebreo al griego koiné las Sagradas Escrituras a 72 sabios que dominaban el hebreo y el griego
+        p: a view new
+        a 32 love
+          i.fa.fa-heart(aria-hidden="true")
+        a 3 coments
+          i.fa.fa-telegram(aria-hidden="true")
+
+    div.row
+      +secciones("1.jpg")
+      +secciones("3.jpg")
+      +secciones("6.jpg")
+      +secciones("8.jpg")
+    div.row
+      +secciones("4.jpg")
+      +secciones("5.jpg")
+      +secciones("10.jpg")
+      +secciones("3.jpg")
